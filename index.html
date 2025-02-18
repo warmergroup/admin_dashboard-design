@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+	<title>Responsive admin dashboard</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="navigation">
+			<ul>
+				<li>
+					<a href="#">
+					<span class="icon"><i class="fa-solid fa-w"></i></span>
+						<span class="title">
+							<h2>warmer group</h2>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+						<span class="title">Dashboard</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><i class="fa-solid fa-users"></i></span>
+						<span class="title">Customers</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><i class="fa-solid fa-message"></i></i></span>
+						<span class="title">Messages</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><i class="fa-solid fa-lock"></i></span>
+						<span class="title">Password</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><i class="fa-solid fa-gear"></i></span>
+						<span class="title">settings</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+						<span class="title">Sign out</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="topbar">
+				<div class="toggle" onclick="toggleMenu();"></div>
+				<div class="search">
+					<label for="">
+						<input type="text" placeholder="search here">
+					</label>
+				</div>
+				<div class="user">
+					<img src="./img/coder-icon-programming-languages-web-development-tre-trendy-flat-style-isolated-blue-background-152104143.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="cardBox">
+				<div class="card">
+					<div>
+						<div class="numbers">1.024</div>
+						<div class="cardName">Daily Views</div>
+					</div>
+					<div class="iconBox">
+						<i class="fa fa-eye"></i>
+					</div>
+				</div>
+				<div class="card">
+					<div>
+						<div class="numbers">234</div>
+						<div class="cardName">Sales</div>
+					</div>
+					<div class="iconBox">
+						<i class="fa-solid fa-cart-shopping"></i>
+					</div>
+				</div>
+				<div class="card">
+					<div>
+						<div class="numbers">7634</div>
+						<div class="cardName">Comments</div>
+					</div>
+					<div class="iconBox">
+						<i class="fa-solid fa-comments"></i>
+					</div>
+				</div>
+				<div class="card">
+					<div>
+						<div class="numbers">73465</div>
+						<div class="cardName">Earning</div>
+					</div>
+					<div class="iconBox">
+						<i class="fa-solid fa-dollar-sign"></i>
+					</div>
+				</div>
+			</div>
+			<div class="details">
+				<div class="recentOrders">
+					<div class="cardHeader">
+						<h2>Recent Order</h2>
+						<a href="#" class="btn">View all</a>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<td>Name</td>
+								<td>Price</td>
+								<td>Payment</td>
+								<td>Status</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Star Refrigerator</td>
+								<td>1200$</td>
+								<td>Paid</td>
+								<td><span class="status delivered">Delivered</span></td>
+							</tr>
+							<tr>
+								<td>IPad 8</td>
+								<td>1500$</td>
+								<td>Due</td>
+								<td><span class="status pending">Pending </span></td>
+							</tr>  
+							<tr>
+								<td>Speakers</td>
+								<td>310$</td>
+								<td>Paid</td>
+								<td><span class="status return">Return</span></td>
+							</tr>
+							<tr>
+								<td>Acer Swift 3</td>
+								<td>920$</td>
+								<td>Due</td>
+								<td><span class="status inprogress">In Progress</span></td>
+							</tr>
+							<tr>
+								<td>Star Refrigerator</td>
+								<td>1200$</td>
+								<td>Paid</td>
+								<td><span class="status delivered">Delivered</span></td>
+							</tr>
+							<tr>
+								<td>IPad 8</td>
+								<td>1500$</td>
+								<td>Due</td>
+								<td><span class="status delivered">Pending </span></td>
+							</tr>  
+							<tr>
+								<td>Speakers</td>
+								<td>310$</td>
+								<td>Paid</td>
+								<td><span class="status return">Return</span></td>
+							</tr>
+							<tr>
+								<td>Acer Swift 3</td>
+								<td>920$</td>
+								<td>Due</td>
+								<td><span class="status inprogress">In Progress</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="recentCustomers">
+					<div class="cardHeader">
+						<h2>recent Customer</h2>
+					</div>
+					<table>
+						<tbody>
+							<tr>
+								<td width="60px"><div class="imgBx"><img src="./img/johannes.jpg" alt=""></div></td>
+								<td><h4>Johannes<br><span>Germany</span></h4></td>
+							</tr> 
+							<tr>
+								<td width="60px"><div class="imgBx"><img src="./img/men1.jpg" alt=""></div></td>
+								<td><h4>John<br><span>Italy</span></h4></td>
+							</tr>
+							<tr>
+								<td width="60px"><div class="imgBx"><img src="./img/women.jpg" alt=""></div></td>
+								<td><h4>Lise<br><span>Korean</span></h4></td>
+							</tr>
+							<tr>
+								<td width="60px"><div class="imgBx"><img src="./img/kind2.jpg" alt=""></div></td>
+								<td><h4>Nahmed<br><span>India</span></h4></td>
+							</tr>
+							<tr>
+								<td width="60px"><div class="imgBx"><img src="./img/kind.jpg" alt=""></div></td>
+								<td><h4>Ali<br><span>Syria</span></h4></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	  
+	<script src="./js/script.js">
+
+	</script>
+</body>
+
+</html>
